@@ -1,0 +1,18 @@
+Screen:
+    MDLabel:
+        text: ""
+        id: txt
+        pos_hint: {'center_x': 0.5, 'center_y': 0.9}
+    MDRaisedButton:
+        text: 'LED ON'
+        pos_hint: {'center_x': 0.5, 'center_y': 0.7}
+        on_press:
+            app.actionon()
+    MDRaisedButton:
+        text: 'LED OFF'
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+        on_press:
+            app.actionoff()
+    MDFloatingActionButtonSpeedDial:
+        data: app.data
+        rotation_root_button: True
